@@ -1,0 +1,49 @@
+{
+  "name": "Thornstone",
+  "description": "Upgrade a unit with +10[health] and [spikes] [effect0.upgrade.status0.power].",
+  "effects": [
+    {
+      "paramCardUpgradeData": {
+        "upgradeTitle": "Thornstone",
+        "upgradeDescription": "+10[health] and gain [spikes] 3.",
+        "statusEffectUpgrades": [
+          {
+            "statusId": "VanillaStatusEffectIDs.Spikes",
+            "count": 3
+          }
+        ],
+        "filters": [
+          {
+            "cardType": "CardType.Monster",
+            "requiredSubtypesOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+            "excludedSubtypesOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+            "requiredStatusEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+            "excludedStatusEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+            "requiredCardTraitsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+            "excludedCardTraitsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+            "requiredCardEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+            "excludedCardEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+            "disallowedCardPools": [
+              "EelGorgonOnlyPool"
+            ],
+            "cardTargetMode": "CardTargetMode.All",
+            "upgradeDisabledReason": "CardState.UpgradeDisabledReason.NONE"
+          }
+        ],
+        "bonusHP": 10
+      },
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramSourceTeam": "Team.Type.None",
+      "paramTrigger": "CharacterTriggerData.Trigger.OnDeath",
+      "paramTargetMode": "TargetMode.FrontInRoom",
+      "paramCardType": "CardType.Monster"
+    }
+  ],
+  "linkedClass": {
+    "m_FileID": 0,
+    "m_PathID": 15323
+  },
+  "relicLoreTooltipStyle": "RelicData.RelicLoreTooltipStyle.Herzal",
+  "rarity": "CollectableRarity.Common",
+  "numCardsToShowInUpgradeScreen": 0
+}

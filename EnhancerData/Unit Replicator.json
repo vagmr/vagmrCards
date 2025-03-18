@@ -1,0 +1,34 @@
+{
+  "name": "Unit Replicator",
+  "description": "Copy a unit.",
+  "effects": [
+    {
+      "paramCardFilter": {
+        "cardType": "CardType.Monster",
+        "requiredSubtypesOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+        "excludedSubtypesOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+        "requiredStatusEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+        "excludedStatusEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+        "requiredCardTraitsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+        "excludedCardTraitsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+        "requiredCardEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+        "excludedCardEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+        "cardTargetMode": "CardTargetMode.All",
+        "upgradeDisabledReason": "CardState.UpgradeDisabledReason.NONE"
+      },
+      "relicEffectClassName": "RelicEffectCardDuplicator",
+      "paramSourceTeam": "Team.Type.None",
+      "paramInt": 1,
+      "paramTrigger": "CharacterTriggerData.Trigger.OnDeath",
+      "paramTargetMode": "TargetMode.FrontInRoom",
+      "paramCardType": "CardType.Invalid"
+    }
+  ],
+  "linkedClass": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "relicLoreTooltipStyle": "RelicData.RelicLoreTooltipStyle.Herzal",
+  "rarity": "CollectableRarity.Rare",
+  "numCardsToShowInUpgradeScreen": -1
+}

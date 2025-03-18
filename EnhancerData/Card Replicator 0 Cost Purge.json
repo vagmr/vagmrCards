@@ -1,0 +1,37 @@
+{
+  "name": "Card Replicator 0 Cost Purge",
+  "description": "Create 5 copies of any non-Champion card.",
+  "effects": [
+    {
+      "paramCardFilter": {
+        "cardType": "CardType.Invalid",
+        "requiredSubtypesOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+        "excludedSubtypesOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+        "excludedSubtypes": [
+          "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
+        ],
+        "requiredStatusEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+        "excludedStatusEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+        "requiredCardTraitsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+        "excludedCardTraitsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+        "requiredCardEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+        "excludedCardEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+        "cardTargetMode": "CardTargetMode.All",
+        "upgradeDisabledReason": "CardState.UpgradeDisabledReason.NONE"
+      },
+      "relicEffectClassName": "RelicEffectCardDuplicator",
+      "paramSourceTeam": "Team.Type.None",
+      "paramInt": 5,
+      "paramTrigger": "CharacterTriggerData.Trigger.OnDeath",
+      "paramTargetMode": "TargetMode.FrontInRoom",
+      "paramCardType": "CardType.Invalid"
+    }
+  ],
+  "linkedClass": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "relicLoreTooltipStyle": "RelicData.RelicLoreTooltipStyle.Herzal",
+  "rarity": "CollectableRarity.Uncommon",
+  "numCardsToShowInUpgradeScreen": -1
+}

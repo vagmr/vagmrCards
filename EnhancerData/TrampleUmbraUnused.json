@@ -1,0 +1,26 @@
+{
+  "effects": [
+    {
+      "paramCardUpgradeData": {
+        "upgradeTitle": "Largestone",
+        "upgradeDescription": "<nobr>+1[capacity]</nobr>, +15[attack], +40[health].",
+        "bonusDamage": 15,
+        "bonusHP": 40,
+        "bonusSize": 1
+      },
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramSourceTeam": "Team.Type.None",
+      "paramTrigger": "CharacterTriggerData.Trigger.OnDeath",
+      "paramTargetMode": "TargetMode.FrontInRoom",
+      "paramCardType": "CardType.Monster"
+    }
+  ],
+  "linkedClass": {
+    "m_FileID": 0,
+    "m_PathID": 15327
+  },
+  "relicLoreTooltipStyle": "RelicData.RelicLoreTooltipStyle.Herzal",
+  "rarity": "CollectableRarity.Uncommon",
+  "numCardsToShowInUpgradeScreen": 0,
+  "name": "TrampleUmbraUnused"
+}

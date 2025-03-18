@@ -1,0 +1,45 @@
+{
+  "name": "Spell Duplicate",
+  "description": "Purge a Spell. Create [effect0.power] copies with 0[ember] and [annihilate].",
+  "effects": [
+    {
+      "paramCardFilter": {
+        "cardType": "CardType.Spell",
+        "requiredSubtypesOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+        "excludedSubtypesOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+        "requiredStatusEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+        "excludedStatusEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+        "requiredCardTraitsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+        "excludedCardTraitsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+        "requiredCardEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+        "excludedCardEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+        "cardTargetMode": "CardTargetMode.All",
+        "upgradeDisabledReason": "CardState.UpgradeDisabledReason.NONE"
+      },
+      "paramCardUpgradeData": {
+        "upgradeTitle": "Unhinged Power",
+        "upgradeDescription": "<nobr>Reduce to 0[ember]</nobr> and apply [annihilate].",
+        "traitDataUpgrades": [
+          {
+            "traitStateName": "CardTraitSelfPurge"
+          }
+        ],
+        "costReduction": 99
+      },
+      "relicEffectClassName": "RelicEffectCardDuplicator",
+      "paramSourceTeam": "Team.Type.None",
+      "paramInt": 3,
+      "paramBool": true,
+      "paramTrigger": "CharacterTriggerData.Trigger.OnDeath",
+      "paramTargetMode": "TargetMode.FrontInRoom",
+      "paramCardType": "CardType.Invalid"
+    }
+  ],
+  "linkedClass": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "relicLoreTooltipStyle": "RelicData.RelicLoreTooltipStyle.Herzal",
+  "rarity": "CollectableRarity.Uncommon",
+  "numCardsToShowInUpgradeScreen": -1
+}

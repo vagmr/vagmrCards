@@ -1,0 +1,25 @@
+{
+  "name": "Heartstone",
+  "description": "Upgrade a unit with +[effect0.upgrade.bonushp][health].",
+  "effects": [
+    {
+      "paramCardUpgradeData": {
+        "upgradeTitle": "Heartstone",
+        "upgradeDescription": "+25[health].",
+        "bonusHP": 25
+      },
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramSourceTeam": "Team.Type.None",
+      "paramTrigger": "CharacterTriggerData.Trigger.OnDeath",
+      "paramTargetMode": "TargetMode.FrontInRoom",
+      "paramCardType": "CardType.Monster"
+    }
+  ],
+  "linkedClass": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "relicLoreTooltipStyle": "RelicData.RelicLoreTooltipStyle.Herzal",
+  "rarity": "CollectableRarity.Common",
+  "numCardsToShowInUpgradeScreen": 0
+}

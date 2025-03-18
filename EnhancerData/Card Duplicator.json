@@ -1,0 +1,18 @@
+{
+  "name": "Card Duplicator",
+  "description": "Duplicate any card except your Champion.",
+  "effects": [
+    {
+      "paramCardFilter": {
+        "excludedSubtypes": [
+          "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
+        ]
+      },
+      "relicEffectClassName": "RelicEffectCardDuplicator",
+      "paramInt": 1,
+      "paramCardType": "CardType.Invalid"
+    }
+  ],
+  "rarity": "CollectableRarity.Rare",
+  "numCardsToShowInUpgradeScreen": -1
+}

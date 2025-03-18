@@ -1,0 +1,44 @@
+{
+  "name": "Sunderstone",
+  "description": "Upgrade a unit with '[strike]: Apply [meleeweakness] 1.'",
+  "effects": [
+    {
+      "paramCardUpgradeData": {
+        "upgradeTitle": "Sunderstone",
+        "upgradeDescription": "Gain '[strike]: Apply [meleeweakness] 1.'",
+        "triggerUpgrades": [
+          {
+            "description": "Apply [meleeweakness] 1.",
+            "effects": [
+              {
+                "paramStatusEffects": [
+                  {
+                    "statusId": "VanillaStatusEffectIDs.MeleeWeakness",
+                    "count": 1
+                  }
+                ],
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "TargetMode.LastAttackedCharacter",
+                "targetTeamType": "Team.Type.Heroes",
+                "paramInt": 100
+              }
+            ],
+            "trigger": "CharacterTriggerData.Trigger.OnAttacking"
+          }
+        ]
+      },
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramSourceTeam": "Team.Type.None",
+      "paramTrigger": "CharacterTriggerData.Trigger.OnDeath",
+      "paramTargetMode": "TargetMode.FrontInRoom",
+      "paramCardType": "CardType.Monster"
+    }
+  ],
+  "linkedClass": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "relicLoreTooltipStyle": "RelicData.RelicLoreTooltipStyle.Herzal",
+  "rarity": "CollectableRarity.Rare",
+  "numCardsToShowInUpgradeScreen": -1
+}

@@ -1,0 +1,36 @@
+{
+  "upgradeTitle": "Heaven’s Aid",
+  "upgradeDescription": "<b>Reserve</b>: Restore 2 health to your Pyre.",
+  "cardTriggerUpgrades": [
+    {
+      "description": "Restore 2 health to your Pyre.",
+      "cardEffects": [
+        {
+          "effectStateName": "CardEffectHealTrain",
+          "targetMode": "TargetMode.Pyre",
+          "filterBasedOnMainSubClass": true,
+          "targetTeamType": "Team.Type.None",
+          "shouldTest": false,
+          "paramInt": 2
+        }
+      ],
+      "trigger": "CardTriggerType.OnUnplayed"
+    }
+  ],
+  "filters": [
+    {
+      "cardType": "CardType.Spell",
+      "requiredSubtypesOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "excludedSubtypesOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "requiredStatusEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "excludedStatusEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "requiredCardTraitsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "excludedCardTraitsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "requiredCardEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "excludedCardEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "cardTargetMode": "CardTargetMode.All",
+      "upgradeDisabledReason": "CardState.UpgradeDisabledReason.NONE"
+    }
+  ],
+  "name": "Heavens_Aid_Spell_ReserveRestorPyre"
+}

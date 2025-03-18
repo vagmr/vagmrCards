@@ -1,0 +1,30 @@
+{
+  "name": "Unhinged Power",
+  "description": "<nobr>Reduce to 0[ember]</nobr> and apply [annihilate].",
+  "effects": [
+    {
+      "paramCardUpgradeData": {
+        "upgradeTitle": "Unhinged Power",
+        "upgradeDescription": "<nobr>Reduce to 0[ember]</nobr> and apply [annihilate].",
+        "traitDataUpgrades": [
+          {
+            "traitStateName": "CardTraitSelfPurge"
+          }
+        ],
+        "costReduction": 99
+      },
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramSourceTeam": "Team.Type.None",
+      "paramTrigger": "CharacterTriggerData.Trigger.OnDeath",
+      "paramTargetMode": "TargetMode.FrontInRoom",
+      "paramCardType": "CardType.Monster"
+    }
+  ],
+  "linkedClass": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "relicLoreTooltipStyle": "RelicData.RelicLoreTooltipStyle.Herzal",
+  "rarity": "CollectableRarity.Rare",
+  "numCardsToShowInUpgradeScreen": -1
+}

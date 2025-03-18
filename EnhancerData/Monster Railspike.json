@@ -1,0 +1,31 @@
+{
+  "name": "Monster Railspike",
+  "description": "Upgrade a unit with <nobr>+[effect0.upgrade.bonusdamage][attack]</nobr> and <nobr>+[effect0.upgrade.bonushp][health]</nobr> and add [annihilate].",
+  "effects": [
+    {
+      "paramCardUpgradeData": {
+        "upgradeTitle": "Monster Railspike",
+        "upgradeDescription": "+20[attack], +20[health], and [annihilate].",
+        "traitDataUpgrades": [
+          {
+            "traitStateName": "CardTraitSelfPurge"
+          }
+        ],
+        "bonusDamage": 20,
+        "bonusHP": 20
+      },
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramSourceTeam": "Team.Type.None",
+      "paramTrigger": "CharacterTriggerData.Trigger.OnDeath",
+      "paramTargetMode": "TargetMode.FrontInRoom",
+      "paramCardType": "CardType.Monster"
+    }
+  ],
+  "linkedClass": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "relicLoreTooltipStyle": "RelicData.RelicLoreTooltipStyle.Herzal",
+  "rarity": "CollectableRarity.Common",
+  "numCardsToShowInUpgradeScreen": -1
+}

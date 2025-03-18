@@ -1,0 +1,39 @@
+{
+  "name": "Improved Railspike",
+  "description": "Upgrade all copies of <b>Automatic Railspikes</b> with +[effect0.upgrade.bonusdamage] [magicpower] and [consume].",
+  "effects": [
+    {
+      "paramCardPool": {
+        "name": "ReplicatingSpellPool",
+        "cardDataList": [
+          "ReplicatingSpell"
+        ]
+      },
+      "paramCardUpgradeData": {
+        "upgradeTitle": "Improved Railspike",
+        "upgradeDescription": "+10 [magicpower] and [consume].",
+        "traitDataUpgrades": [
+          {
+            "traitStateName": "CardTraitExhaustState"
+          }
+        ],
+        "bonusDamage": 10,
+        "upgradesToRemove": [
+          "ReplicateOnKill"
+        ]
+      },
+      "relicEffectClassName": "RelicEffectUpgradeMatchingCards",
+      "paramSourceTeam": "Team.Type.None",
+      "paramTrigger": "CharacterTriggerData.Trigger.OnDeath",
+      "paramTargetMode": "TargetMode.FrontInRoom",
+      "paramCardType": "CardType.Monster"
+    }
+  ],
+  "linkedClass": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "relicLoreTooltipStyle": "RelicData.RelicLoreTooltipStyle.Herzal",
+  "rarity": "CollectableRarity.Common",
+  "numCardsToShowInUpgradeScreen": -1
+}

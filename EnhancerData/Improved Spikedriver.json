@@ -1,0 +1,34 @@
+{
+  "name": "Improved Spikedriver",
+  "description": "Upgrade all copies of <b>Spikedriver Colony</b> with +[effect0.upgrade.bonusdamage][attack].",
+  "effects": [
+    {
+      "paramCardPool": {
+        "name": "ReplicatingUnitPool",
+        "cardDataList": [
+          "ReplicatingUnit"
+        ]
+      },
+      "paramCardUpgradeData": {
+        "upgradeTitle": "Improved Spikedriver",
+        "upgradeDescription": "+20[attack].",
+        "bonusDamage": 20,
+        "upgradesToRemove": [
+          "ReplicateOnDeath"
+        ]
+      },
+      "relicEffectClassName": "RelicEffectUpgradeMatchingCards",
+      "paramSourceTeam": "Team.Type.None",
+      "paramTrigger": "CharacterTriggerData.Trigger.OnDeath",
+      "paramTargetMode": "TargetMode.FrontInRoom",
+      "paramCardType": "CardType.Monster"
+    }
+  ],
+  "linkedClass": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "relicLoreTooltipStyle": "RelicData.RelicLoreTooltipStyle.Herzal",
+  "rarity": "CollectableRarity.Common",
+  "numCardsToShowInUpgradeScreen": -1
+}

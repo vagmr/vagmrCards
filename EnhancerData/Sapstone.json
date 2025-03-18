@@ -1,0 +1,44 @@
+{
+  "name": "Sapstone",
+  "description": "Upgrade a unit with '[summon]: Apply [sap] 4 to enemy units.'",
+  "effects": [
+    {
+      "paramCardUpgradeData": {
+        "upgradeTitle": "Sapstone",
+        "upgradeDescription": "Gain '[summon]: Apply [sap] 4 to enemy units.'",
+        "triggerUpgrades": [
+          {
+            "description": "Apply [sap] 4 to enemy units.",
+            "effects": [
+              {
+                "paramStatusEffects": [
+                  {
+                    "statusId": "VanillaStatusEffectIDs.Sap",
+                    "count": 4
+                  }
+                ],
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "TargetMode.Room",
+                "targetTeamType": "Team.Type.Heroes",
+                "paramInt": 100
+              }
+            ],
+            "trigger": "CharacterTriggerData.Trigger.OnSpawn"
+          }
+        ]
+      },
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramSourceTeam": "Team.Type.None",
+      "paramTrigger": "CharacterTriggerData.Trigger.OnDeath",
+      "paramTargetMode": "TargetMode.FrontInRoom",
+      "paramCardType": "CardType.Monster"
+    }
+  ],
+  "linkedClass": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "relicLoreTooltipStyle": "RelicData.RelicLoreTooltipStyle.Herzal",
+  "rarity": "CollectableRarity.Rare",
+  "numCardsToShowInUpgradeScreen": -1
+}

@@ -1,0 +1,33 @@
+{
+  "upgradeTitle": "Heaven’s Finest",
+  "upgradeDescription": "Remove [consume] from card. +5 [magicpower].",
+  "statusEffectUpgrades": [
+    {
+      "statusId": "VanillaStatusEffectIDs.Endless",
+      "count": 1
+    }
+  ],
+  "filters": [
+    {
+      "cardType": "CardType.Invalid",
+      "requiredSubtypesOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "excludedSubtypesOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "requiredStatusEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "excludedStatusEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "requiredCardTraitsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "requiredCardTraits": [
+        "CardTraitExhaustState"
+      ],
+      "excludedCardTraitsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "requiredCardEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "excludedCardEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "cardTargetMode": "CardTargetMode.All",
+      "upgradeDisabledReason": "CardState.UpgradeDisabledReason.NONE"
+    }
+  ],
+  "bonusDamage": 5,
+  "removeTraitUpgrades": [
+    "CardTraitExhaustState"
+  ],
+  "name": "Delayed_RemoveConsumeFinal"
+}

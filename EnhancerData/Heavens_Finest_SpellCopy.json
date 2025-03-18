@@ -1,0 +1,37 @@
+{
+  "upgradeTitle": "Heaven’s Finest",
+  "upgradeDescription": "Reduce cost to 0[ember]. Add a copy to your discard pile when played.",
+  "cardTriggerUpgrades": [
+    {
+      "description": "Add a copy to your discard pile.",
+      "cardEffects": [
+        {
+          "effectStateName": "CardEffectAddUpgradedCopy",
+          "targetMode": "TargetMode.Room",
+          "copyModifiersFromSource": true,
+          "targetTeamType": "Team.Type.None",
+          "shouldTest": false,
+          "paramInt": 1
+        }
+      ],
+      "trigger": "CardTriggerType.OnCast"
+    }
+  ],
+  "filters": [
+    {
+      "cardType": "CardType.Spell",
+      "requiredSubtypesOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "excludedSubtypesOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "requiredStatusEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "excludedStatusEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "requiredCardTraitsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "excludedCardTraitsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "requiredCardEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "excludedCardEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "cardTargetMode": "CardTargetMode.All",
+      "upgradeDisabledReason": "CardState.UpgradeDisabledReason.NONE"
+    }
+  ],
+  "costReduction": 99,
+  "name": "Heavens_Finest_SpellCopy"
+}

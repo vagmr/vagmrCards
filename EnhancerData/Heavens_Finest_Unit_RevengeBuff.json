@@ -1,0 +1,39 @@
+{
+  "upgradeTitle": "Heaven’s Finest",
+  "upgradeDescription": "+30[health] and '[revenge]: Apply +1[attack] to friendly units.'",
+  "triggerUpgrades": [
+    {
+      "description": "Apply +[effect0.upgrade.bonusdamage][attack] to friendly units.",
+      "effects": [
+        {
+          "paramCardUpgradeData": {
+            "bonusDamage": 1
+          },
+          "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+          "targetMode": "TargetMode.Room",
+          "targetTeamType": "Team.Type.Monsters",
+          "paramInt": 1,
+          "hideTooltip": true
+        }
+      ],
+      "trigger": "CharacterTriggerData.Trigger.OnHit"
+    }
+  ],
+  "filters": [
+    {
+      "cardType": "CardType.Monster",
+      "requiredSubtypesOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "excludedSubtypesOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "requiredStatusEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "excludedStatusEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "requiredCardTraitsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "excludedCardTraitsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "requiredCardEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "excludedCardEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "cardTargetMode": "CardTargetMode.All",
+      "upgradeDisabledReason": "CardState.UpgradeDisabledReason.NONE"
+    }
+  ],
+  "bonusHP": 30,
+  "name": "Heavens_Finest_Unit_RevengeBuff"
+}

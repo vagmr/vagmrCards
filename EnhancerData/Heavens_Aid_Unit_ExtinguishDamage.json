@@ -1,0 +1,35 @@
+{
+  "upgradeTitle": "Heaven’s Aid",
+  "upgradeDescription": "[extinguish]: Deal 40 damage to the front enemy unit.",
+  "triggerUpgrades": [
+    {
+      "description": "Deal 40 damage to the front enemy unit.",
+      "effects": [
+        {
+          "effectStateName": "CardEffectDamage",
+          "targetMode": "TargetMode.FrontInRoom",
+          "filterBasedOnMainSubClass": true,
+          "targetTeamType": "Team.Type.Heroes",
+          "paramInt": 40
+        }
+      ],
+      "trigger": "CharacterTriggerData.Trigger.OnDeath"
+    }
+  ],
+  "filters": [
+    {
+      "cardType": "CardType.Monster",
+      "requiredSubtypesOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "excludedSubtypesOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "requiredStatusEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "excludedStatusEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "requiredCardTraitsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "excludedCardTraitsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "requiredCardEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "excludedCardEffectsOperator": "CardUpgradeMaskDataBuilder.CompareOperator.And",
+      "cardTargetMode": "CardTargetMode.All",
+      "upgradeDisabledReason": "CardState.UpgradeDisabledReason.NONE"
+    }
+  ],
+  "name": "Heavens_Aid_Unit_ExtinguishDamage"
+}
