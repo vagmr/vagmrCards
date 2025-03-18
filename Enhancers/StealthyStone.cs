@@ -66,7 +66,6 @@ namespace VagmrCards.Enhancers
                 { 
                     VanillaEnhancerPoolIDs.UnitUpgradePoolCommon,
                     VanillaEnhancerPoolIDs.UnitUpgradePoolCommon,
-                    VanillaEnhancerPoolIDs.UnitUpgradePoolCommon
                 }, // 强化器池ID列表，多次添加增加出现概率
                 Upgrade = upgrade,                   // 使用之前创建的升级数据 (Use the previously created upgrade data)
                 Rarity = CollectableRarity.Common,   // 设置为普通稀有度 (Set to common rarity)

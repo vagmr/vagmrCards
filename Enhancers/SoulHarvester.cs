@@ -31,7 +31,7 @@ namespace VagmrCards.Enhancers
                 EffectStateType = typeof(CardEffectBuffDamage),
                 TargetMode = TargetMode.Self,
                 TargetTeamType = Team.Type.Monsters,
-                ParamInt = 3, // +3攻击   
+                ParamInt = 4, // +4攻击   
             };
 
             var HealthyBuff = new CardEffectDataBuilder
@@ -39,7 +39,7 @@ namespace VagmrCards.Enhancers
                 EffectStateType = typeof(CardEffectBuffMaxHealth),
                 TargetMode = TargetMode.Self,
                 TargetTeamType = Team.Type.Monsters,
-                ParamInt = 5, // +5生命
+                ParamInt = 7, // +7生命
             };
 
             // 创建触发效果 - 当楼层上任何单位死亡时触发
@@ -47,7 +47,7 @@ namespace VagmrCards.Enhancers
             {
                 TriggerID = TriggeredEffectID,
                 Trigger = CharacterTriggerData.Trigger.OnAnyUnitDeathOnFloor, // 当楼层上任何单位死亡时触发
-                Description = "当前楼层上任何单位死亡时，获得+3[attack]和+5[health]",
+                Description = "当前楼层上任何单位死亡时，获得+4[attack]和+7[health]",
                 EffectBuilders = { AttackBuff, HealthyBuff },
             };
 
@@ -56,7 +56,10 @@ namespace VagmrCards.Enhancers
             {
                 UpgradeID = UpgradeID,
                 UpgradeTitle = "亡魂之力",
-                UpgradeDescription = "当前楼层任何单位死亡时，获得+3[attack]和+5[health]",
+                BonusSize = -1,
+                BonusDamage = -5,
+                BonusHP = -5,
+                UpgradeDescription = " -5[attack]和-5[health]但体积-1 并且当前楼层任何单位死亡时，获得+4[attack]和+7[health]",
                 // 目标类型CharacterTriggerDataBuilder对角色施加效果
                 TriggerUpgradeBuilders = {triggeredEffect},
                 HideUpgradeIconOnCard = false,
@@ -69,7 +72,7 @@ namespace VagmrCards.Enhancers
             {
                 EnhancerID = ID,
                 Name = "亡魂之力",
-                Description = "当前楼层上任何单位死亡时，获得+3[attack]和+5[health]",
+                Description = " -5[attack]和-5[health]但体积-1 并且当前楼层任何单位死亡时，获得+4[attack]和+7[health]",
                 EnhancerPoolIDs = { 
                     VanillaEnhancerPoolIDs.UnitUpgradePoolCommon, 
                     VanillaEnhancerPoolIDs.UnitUpgradePoolCommon, 

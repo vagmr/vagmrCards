@@ -71,7 +71,7 @@ namespace VagmrCards.Enhancers
                     // VanillaEnhancerPoolIDs.UnitUpgradePoolCommon
                 }, 
                 Upgrade = upgrade, // 使用之前创建的升级数据
-                Rarity = CollectableRarity.Common, // 设置为普通稀有度
+                Rarity = CollectableRarity.Uncommon, // 设置为普通稀有度
                 CardType = CardType.Monster, // 适用于怪物卡牌
                 IconPath = "assets/PowerGem.png", // 强化器图标资源路径
             }.BuildAndRegister();
