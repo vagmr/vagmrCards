@@ -95,7 +95,7 @@ namespace VagmrCards.Enhancers
                     VanillaEnhancerPoolIDs.UnitUpgradePoolCommon,
                 },
                 Upgrade = upgrade,
-                Rarity = CollectableRarity.Rare,
+                Rarity = CollectableRarity.Uncommon,
                 CardType = CardType.Monster,
                 IconPath = "assets/KillHunter.png"
             }.BuildAndRegister();

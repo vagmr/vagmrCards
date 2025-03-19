@@ -68,7 +68,7 @@ namespace VagmrCards.Enhancers
                     VanillaEnhancerPoolIDs.UnitUpgradePoolCommon,
                 }, // 强化器池ID列表，多次添加增加出现概率
                 Upgrade = upgrade,                   // 使用之前创建的升级数据 (Use the previously created upgrade data)
-                Rarity = CollectableRarity.Common,   // 设置为普通稀有度 (Set to common rarity)
+                Rarity = CollectableRarity.Uncommon,   // 设置为普通稀有度 (Set to common rarity)
                 CardType = CardType.Monster,         // 适用于怪物卡牌 (Applicable to monster cards)
                 IconPath = "assets/StealthyStone.png", // 强化器图标资源路径 (Enhancer icon asset path)
             }.BuildAndRegister();
