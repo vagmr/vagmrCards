@@ -54,7 +54,7 @@ namespace VagmrCards.Enhancers
                     VanillaEnhancerPoolIDs.UnitUpgradePoolCommon, 
                 }, // 强化器池ID列表，添加到非普通池中，多次添加增加出现概率
                 Upgrade = upgrade, // 使用之前创建的升级数据
-                Rarity = CollectableRarity.Uncommon, 
+                Rarity = CollectableRarity.Rare, 
                 CardType = CardType.Monster, // 适用于怪物卡牌
                 IconPath = "assets/SwiftBlade.png", // 强化器图标资源路径
             }.BuildAndRegister();

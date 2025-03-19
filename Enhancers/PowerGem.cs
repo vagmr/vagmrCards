@@ -10,19 +10,8 @@ namespace VagmrCards.Enhancers
     /// </summary>
     public class PowerGem
     {
-        /// <summary>
-        /// 强化器的唯一标识符
-        /// </summary>
         public static readonly string ID = VagmrCardsPatch.GUID + "_PowerGem";
-        
-        /// <summary>
-        /// 升级效果的唯一标识符
-        /// </summary>
         public static readonly string UpgradeID = VagmrCardsPatch.GUID + "_PowerGemUpgrade";
-        
-        /// <summary>
-        /// 升级过滤器的唯一标识符
-        /// </summary>
         public static readonly string UpgradeMaskID = VagmrCardsPatch.GUID + "_PowerGemUpgradeMask";
 
         /// <summary>
@@ -44,12 +33,12 @@ namespace VagmrCards.Enhancers
             var upgrade = new CardUpgradeDataBuilder
             {
                 UpgradeID = UpgradeID,
-                UpgradeTitle = "力之宝石", // 升级标题
+                UpgradeTitle = "力之宝石", 
                 UpgradeDescription = "增加单位 +25[attack] 和 +35[health]", // 升级描述
                 BonusDamage = 25, // 增加25点攻击力
                 BonusHP = 35, // 增加35点生命值
                 HideUpgradeIconOnCard = false, // 在卡牌上显示升级图标
-                FiltersBuilders = { filter }, // 应用之前创建的过滤器
+                FiltersBuilders = { filter }, 
                 AssetPath = "assets/PowerGem.png", // 升级图标资源路径
             }.Build();
 
@@ -71,7 +60,7 @@ namespace VagmrCards.Enhancers
                     // VanillaEnhancerPoolIDs.UnitUpgradePoolCommon
                 }, 
                 Upgrade = upgrade, // 使用之前创建的升级数据
-                Rarity = CollectableRarity.Uncommon, // 设置为普通稀有度
+                Rarity = CollectableRarity.Rare, // 设置为稀有度
                 CardType = CardType.Monster, // 适用于怪物卡牌
                 IconPath = "assets/PowerGem.png", // 强化器图标资源路径
             }.BuildAndRegister();

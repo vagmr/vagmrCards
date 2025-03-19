@@ -35,6 +35,7 @@ namespace VagmrCards
             
             // 注册亡魂之力强化器
             SoulHarvester.BuildAndRegister();
+            KillHunter.BuildAndRegister();
         }
     }
 }
