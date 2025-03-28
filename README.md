@@ -22,13 +22,6 @@ This is a mod developed for the game "Monster Train", adding various custom enha
    3. 启动游戏
 
 
-## 🔧 开发说明 (Development Notes)
-
-项目使用 C# 开发，基于 Trainworks 模组框架。主要文件结构：
-
-- `main.cs` - 主入口文件，负责注册所有强化器
-- `Enhancers/` - 包含所有强化器的实现代码
-
 
 ## 📄 许可证 (License)
 
